@@ -17,57 +17,87 @@
   background: radial-gradient(circle at center, #ff2a2a71 10%, #8b9cff 90%);
 }
 
-
 .heading {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .calculator {
-    width: 90%;
-    min-height: 200px;
-    border-radius: 20px;
-    padding: 30px;
-    display: grid;
-    place-items: center;
-    background-color: #e6e6e6;
-    box-shadow: 3px 3px 4px rgb(70, 70, 70);
+  width: 90%;
+  min-height: 200px;
+  border-radius: 20px;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  background-color: #e6e6e6;
+  box-shadow: 3px 3px 4px rgb(70, 70, 70);
 }
 
 @media (min-width: 500px) {
+  .heading {
+    margin: 30px 0;
+  }
 
-    .heading {
-        margin: 30px 0;
-    }
-
-    .calculator {
-        width: 400px;
-    }
+  .calculator {
+    width: 400px;
+  }
 }
-
 
 /* calculator input fields styling */
 
 input {
-    background-color: aliceblue;
-    padding: 5px 10px;
-    border: none;
-    width: 60%;
-    box-shadow: 2px 2px 2px grey;
-    margin: 10px 0;
+  background-color: aliceblue;
+  padding: 5px 10px;
+  border: none;
+  width: 60%;
+  box-shadow: 2px 2px 2px grey;
+  margin: 10px 0;
 }
 
 label {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #calculate {
-    margin: 30px 0 0 0;
-    padding: 5px 10px;
-    width: 70%;
-    border: none;
-    font-weight: bold;
+  margin: 30px 0 0 0;
+  padding: 10px 15px;
+  width: 60%;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px rgb(189, 189, 189);
+  transition: all 0.1s ease-in-out;
+}
+
+#calculate:hover {
+  box-shadow: 0 0 0;
+  cursor: pointer;
+}
+
+.result {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.result p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.result #result {
+  font-size: 22px;
+  font-weight: 900;
+  color: rgb(69, 69, 216);
+  background-color: #cccccc;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#comment {
+  font-size: 20px;
+  color: #501325;
 }
